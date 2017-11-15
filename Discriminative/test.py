@@ -19,8 +19,9 @@ import theano.tensor as T
 import theano.sandbox.cuda.basic_ops as sbcuda
 import lasagne
 
-# import sys
-# sys.path.insert(0, 'C:\Users\Andy\Generative-and-Discriminative-Voxel-Modeling')
+import sys
+sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)) + '/..')
+
 from utils import checkpoints, metrics_logging
 from collections import OrderedDict
 import matplotlib
